@@ -1,4 +1,35 @@
-<h1>Cliente Details</h1>
-<h2>Nome: {{object.nome}}</h2>
+{% comment %} <h1>Cliente Details</h1>
+<h2>Nome: {{object.name}}</h2>
 <h2>Telefone: {{object.telefone}}</h2>
-<h2>E-mail: {{object.email}}</h2>
+<h2>E-mail: {{object.email}}</h2> {% endcomment %}
+
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">Detalhes do Cliente</h1>
+
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <table class="min-w-full bg-white">
+            <tbody>
+                <tr>
+                    <td class="py-2 px-4 border-b text-left font-medium">Nome:</td>
+                    <td class="py-2 px-4 border-b text-left">{{ object.name }}</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b text-left font-medium">Telefone:</td>
+                    <td class="py-2 px-4 border-b text-left">{{ object.telefone }}</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b text-left font-medium">E-mail:</td>
+                    <td class="py-2 px-4 border-b text-left">{{ object.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-4">
+        <a href="{% url 'cliente_edit' object.id %}" class="bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600">Editar Cliente</a>
+        <a href="{% url 'cliente_list' %}" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 ml-2">Voltar para a lista</a>
+    </div>
+</div>

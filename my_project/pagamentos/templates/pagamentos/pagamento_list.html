@@ -1,4 +1,4 @@
-<h1>Pagamentos</h1>
+{% comment %} <h1>Pagamentos</h1>
 
  
 <table border="1">
@@ -25,4 +25,47 @@
     {% endfor %}
 </tbody>
 </table>
-<a href="{% url "pagamento_new" %}">New</a>
+<a href="{% url "pagamento_new" %}">New</a> {% endcomment %}
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-4">Pagamentos</h1>
+
+    <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+        <table class="min-w-full bg-white">
+            <thead class="bg-gray-800 text-white">
+                <tr>
+                    <th class="py-2 px-4 border-b text-left">Nº Pedido</th>
+                    <th class="py-2 px-4 border-b text-center">Método de Pagamento</th>
+                    <th class="py-2 px-4 border-b text-center">Visualizar</th>
+                    <th class="py-2 px-4 border-b text-center">Editar</th>
+                    <th class="py-2 px-4 border-b text-center">Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pagamento in object_list %}
+                <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4 border-b text-left">{{ pagamento.numeropedido }}</td>
+                    <td class="py-2 px-4 border-b text-center">{{ pagamento.metodo }}</td>
+                    <td class="py-2 px-4 border-b text-center">
+                        <a href="{% url 'pagamento_view' pagamento.id %}" class="text-blue-600 hover:underline">Visualizar</a>
+                    </td>
+                    <td class="py-2 px-4 border-b text-center">
+                        <a href="{% url 'pagamento_edit' pagamento.id %}" class="text-yellow-600 hover:underline">Editar</a>
+                    </td>
+                    <td class="py-2 px-4 border-b text-center">
+                        <a href="{% url 'pagamento_delete' pagamento.id %}" class="text-red-600 hover:underline">Deletar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-4">
+        <a href="{% url 'pagamento_new' %}" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Novo Pagamento</a>
+    </div>
+</div>
+
+
