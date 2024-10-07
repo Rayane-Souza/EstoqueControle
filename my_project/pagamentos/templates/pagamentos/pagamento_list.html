@@ -1,0 +1,28 @@
+<h1>Pagamentos</h1>
+
+ 
+<table border="1">
+<thead>
+    <tr>
+    <th>nº Pedido</th>
+    <th>Método de pagamento</th>
+    <!-- <th>Status</th> -->
+    <th>Visualizar</th>
+    <th>Editar</th>
+    <th>Deletar</th>
+    </tr>
+</thead>
+<tbody>
+    {% for pagamento in object_list %}
+    <tr>
+    <td>{{ pagamento.numeropedido }}</td>
+    <td>{{ pagamento.metodo }}</td>
+    <!-- <td>{{ pagamento.staus }}</td> -->
+    <td><a href="{% url "pagamento_view" pagamento.id %}">Visualizar</a></td>
+    <td><a href="{% url "pagamento_edit" pagamento.id %}">Editar</a></td>
+    <td><a href="{% url "pagamento_delete" pagamento.id %}">Deletar</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+<a href="{% url "pagamento_new" %}">New</a>

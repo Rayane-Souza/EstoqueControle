@@ -1,0 +1,27 @@
+<h1>Clientes</h1>
+
+<table border="1">
+<thead>
+    <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>E-mail</th>
+    <th>Visualizar</th>
+    <th>Editar</th>
+    <th>Deletar</th>
+    </tr>
+</thead>
+<tbody>
+    {% for cliente in object_list %}
+    <tr>
+    <td>{{ cliente.name }}</td>
+    <td>{{ cliente.telefone }}</td>
+    <td>{{ cliente.email }}</td>
+    <td><a href="{% url "cliente_view" cliente.id %}">Visualizar</a></td>
+    <td><a href="{% url "cliente_edit" cliente.id %}">Editar</a></td>
+    <td><a href="{% url "cliente_delete" cliente.id %}">Deletar</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+<a href="{% url "cliente_new" %}">New</a>
