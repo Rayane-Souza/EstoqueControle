@@ -7,25 +7,42 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 <div class="container mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-6">Editar Produto</h1>
+    <h1 class="text-3xl font-bold mb-6 text-gray-800">Editar Produto</h1>
 
-    <div class="bg-blue-100 shadow-md rounded-lg p-6">
-        <form method="post">
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-md"> 
             {% csrf_token %}
             <div class="space-y-4">
                 {% for field in form %}
-                    <div>
+                    <div class="flex flex-col">
                         <label class="block text-sm font-medium text-gray-700 mb-1">{{ field.label }}</label>
                         <div>
-                            {{ field }} 
+                            {{ field }}
                         </div>
                     </div>
                 {% endfor %}
             </div>
             
-            <input type="submit" value="Salvar" class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600" />
+            <button type="submit" class="mt-6 w-full bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                Salvar
+            </button>
         </form>
     </div>
 </div>
+
+<style>
+    input, select, textarea {
+        border: 1px solid #d1d5db; 
+        border-radius: 0.5rem;
+        padding: 0.5rem; 
+        width: 100%; 
+        outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+        ring: 2px solid #3b82f6; 
+    }
+</style>
+
+
+
 
 
