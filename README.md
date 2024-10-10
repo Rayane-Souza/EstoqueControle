@@ -45,17 +45,10 @@ Aqui está uma visão geral da estrutura de pastas do projeto:
 2. Entre no diretório do projeto:
    ```bash
    cd .\EstoqueControle\
-3. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-4. Execute o servidor:
-   ```bash
-   pip install -r requirements.txt
-5. Execute o servidor:
+3. Execute o servidor:
    ```bash
    python manage.py runserver
 ## Contribuidores
-
 
 * Ana Silva
 * Ana Rodrigues
