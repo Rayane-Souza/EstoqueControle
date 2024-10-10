@@ -2,7 +2,7 @@
 
 ## **Descrição do Projeto**
 
-Este é o projeto da primeira unidade da disciplina de back-end do 4º período, desenvolvido por Rayane Kelly, Rogério Rodrigues, Ana Rodrigues e Ana Silva. O objetivo do projeto é construir uma aplicação CRUD (Create, Read, Update, Delete) para o controle de estoque, utilizando o framework Django e o banco de dados SQLite para gerenciar e armazenar as informações.
+Este é o projeto da primeira unidade da disciplina de back-end do 4º período, desenvolvido por Rayane Kelly, Ana Rodrigues, Rogério Rodrigues, Ana Silva e Luiz Sacramento. O objetivo do projeto é construir uma aplicação CRUD (Create, Read, Update, Delete) para o controle de estoque, utilizando o framework Django e o banco de dados SQLite para gerenciar e armazenar as informações.
 
 A aplicação permite o gerenciamento completo dos itens de estoque, oferecendo uma interface simples para que o usuário possa adicionar, visualizar, editar e excluir produtos. Com essa solução, é possível monitorar de forma eficiente a quantidade de itens disponíveis e suas respectivas movimentações.
 
