@@ -44,7 +44,7 @@ Aqui está uma visão geral da estrutura de pastas do projeto:
    git clone git@github.com:Rayane-Souza/EstoqueControle.git
 2. Entre no diretório do projeto:
    ```bash
-   cd .\EstoqueControle\
+   cd .\my_project\
 3. Execute o servidor:
    ```bash
    python manage.py runserver
