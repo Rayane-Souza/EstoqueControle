@@ -23,19 +23,19 @@ A aplicação permite o gerenciamento completo dos itens de estoque, oferecendo 
 
 ### **Tela Inicial - Listagem de Produtos**
 
-![Listagem de Produtos](./my_project/assets/img/Screenshot_1.png)
+![Listagem de Produtos](./my_project/static/img/Screenshot_1.png)
 
 ### **Tela de Cadastro de Produto**
 
-![Cadastro de Produto](./my_project/assets/img/Screenshot_2.png)
+![Cadastro de Produto](./my_project/static/img/Screenshot_2.png)
 
 ### **Tela de Edição de Produto**
 
-![Edição de Produto](./my_project/assets/img/Screenshot_3.png)
+![Edição de Produto](./my_project/static/img/Screenshot_3.png)
 
 ### **Tela de Deletar Produto**
 
-![Edição de Produto](./my_project/assets/img/Screenshot_4.png)
+![Edição de Produto](./my_project/static/img/Screenshot_4.png)
 
 ---
 ## **Estrutura do Diretório**
