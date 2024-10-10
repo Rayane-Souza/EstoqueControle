@@ -41,7 +41,7 @@ Aqui está uma visão geral da estrutura de pastas do projeto:
 
 1. Clone o repositório:
    ```bash
-   git clone git@github.com:Rayane-Souza/EstoqueControle.git
+   git clone https://github.com/Rayane-Souza/EstoqueControle.git
 2. Entre no diretório do projeto:
    ```bash
    cd .\my_project\
