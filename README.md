@@ -13,10 +13,28 @@ A aplicação permite o gerenciamento completo dos itens de estoque, oferecendo 
 - **Django:** Framework web em Python que facilitou o desenvolvimento do back-end.
 - **SQLite:** Banco de dados relacional leve e fácil de usar, integrado com o Django.
 - **Python 3.10:** Linguagem de programação usada para o desenvolvimento da aplicação.
+- **Tailwind CSS:** Framework CSS utilizado para estilizar as páginas de forma rápida e eficiente.
 - **HTML/CSS:** Tecnologias básicas para a renderização de templates no front-end.
 
 ---
+---
 
+## **Capturas de Tela**
+
+### **Tela Inicial - Listagem de Produtos**
+
+![Listagem de Produtos]()
+)
+
+### **Tela de Cadastro de Produto**
+
+![Cadastro de Produto](images/cadastro_produto.png)
+
+### **Tela de Edição de Produto**
+
+![Edição de Produto](images/edicao_produto.png)
+
+---
 ## **Estrutura do Diretório**
 
 Aqui está uma visão geral da estrutura de pastas do projeto:
